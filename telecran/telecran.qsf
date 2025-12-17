@@ -5,7 +5,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEBA6U23I7
-set_global_assignment -name TOP_LEVEL_ENTITY "telecran"
+set_global_assignment -name TOP_LEVEL_ENTITY telecran
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 14.0
 set_global_assignment -name LAST_QUARTUS_VERSION "24.1std.0 Lite Edition"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "TUE MAR  3 15:11:40 2015"
@@ -101,9 +101,6 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP "-40"
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name DEVICE_FILTER_PIN_COUNT 672
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
 
@@ -170,4 +167,10 @@ set_location_assignment PIN_AF22 -to o_leds[6]
 set_location_assignment PIN_AG20 -to o_leds[7]
 set_location_assignment PIN_AG18 -to o_leds[8]
 set_location_assignment PIN_AG15 -to o_leds[9]
+set_global_assignment -name VHDL_FILE encodeur.vhd
+set_global_assignment -name VHDL_FILE encodeur_tb.vhd
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
