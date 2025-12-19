@@ -69,6 +69,12 @@ architecture rtl of telecran is
 	
 	signal s_x_encoder : natural range 0 to h_res-1 := 0;
    signal s_y_encoder : natural range 0 to v_res-1 := 0;
+	
+	signal s_pixel_addr_a : natural range 0 to 720*480-1;
+	signal s_pixel_addr_b : natural range 0 to 720*480-1;
+	
+	signal s_data_a : std_logic_vector(8-1 downto 0);
+	signal s_data_out : std_logic_vector(8-1 downto 0);
 
 begin
 	-- o_leds <= (others => '0');
@@ -95,7 +101,7 @@ begin
 	 
 	encodeur_left : entity work.encodeur
 	   generic map (
-			WIDTH => h_res
+			CNT_MAX => h_res
 		)
 		port map (
 			i_clk => i_clk_50,
@@ -109,7 +115,7 @@ begin
 	
 	encodeur_right : entity work.encodeur
 		generic map (
-			WIDTH => v_res
+			CNT_MAX => v_res
 		)
 		port map (
 			i_clk => i_clk_50,
@@ -121,7 +127,7 @@ begin
 			o_compteur => s_y_encoder
 	);
 	
-	hdmi_controler : entity work.hdmi_controler
+	hdmi_controler0 : entity work.hdmi_controler
 		port map (
 			i_clk => s_clk_27,
 			i_rst_n => s_rst_n,
@@ -131,32 +137,54 @@ begin
 			o_hdmi_de => o_hdmi_tx_de,
 			
 			o_pixel_en => open,
-			o_pixel_address => open,
+			o_pixel_address => s_pixel_addr_b,
 			o_x_counter => s_x_counter,
          o_y_counter => s_y_counter
 			
 	);
 	
+	dpram0 : entity work.dpram
+		generic map (
+			mem_size => h_res * v_res,
+			data_width => 8
+		)
+		port map (
+		  i_clk_a => i_clk_50,
+        i_clk_b => s_clk_27,
+
+        i_data_a => s_data_a,
+        i_data_b => x"00",
+        i_addr_a => s_pixel_addr_a,
+        i_addr_b => s_pixel_addr_b,
+        i_we_a => '1',
+        i_we_b => '0',
+        o_q_a => open,
+        o_q_b => s_data_out
+	);
+	
 	o_hdmi_tx_clk <= s_clk_27;
+	
 	
 	--o_hdmi_tx_d(23 downto 16) <= x"FF";
 	--o_hdmi_tx_d(15 downto 8) <= x"FF";
 	--o_hdmi_tx_d(7 downto 0) <= x"FF";
 	
-	process(s_x_counter, s_x_encoder, s_y_counter, s_y_encoder)
-	begin
+--	process(s_x_counter, s_x_encoder, s_y_counter, s_y_encoder)
+--	begin
+--	
+--		if (s_x_counter = s_x_encoder) and (s_y_counter = s_y_encoder) then 
+--			o_hdmi_tx_d <= x"FFFFFF";
+--		else 
+--			o_hdmi_tx_d <= x"000000";
+--		end if;
+--
+--	end process;
 	
-		if (rising_edge(i_clk_50)) then 
-			if (s_x_counter = s_x_encoder) and (s_y_counter = s_y_encoder) then 
-				o_hdmi_tx_d <= x"FFFFFF";
-			else 
-				o_hdmi_tx_d <= x"000000";
-			end if;
-		
-		end if; 
 
-		
-	end process;
+	s_pixel_addr_a <= s_x_encoder + (s_y_encoder * h_res);
+	s_data_a <= x"FF";
+	
+	o_hdmi_tx_d(23 downto 16) <= s_data_out;
 	
 	
 end architecture rtl;
