@@ -1,0 +1,871 @@
+!SESSION 2025-12-19 11:47:10.213 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=21.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-12-19 11:48:48.446
+!MESSAGE Indexed 'bsp' (85 sources, 83 headers) in 3,09 sec: 1 891 declarations; 3 770 references; 144 unresolved inclusions; 6 syntax errors; 460 unresolved names (7,5 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-12-19 11:49:00.426
+!MESSAGE Indexed 'app' (0 sources, 0 headers) in 0,009 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-12-19 11:49:38.927
+!MESSAGE Error: org/slf4j/LoggerFactory
+!STACK 0
+java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.eclipse.jetty.util.log.Log.getLogger(Log.java:31)
+	at org.eclipse.jetty.util.ajax.JSON.<clinit>(JSON.java:90)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.shutdown(CompileCommandsJsonParser.java:612)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.closeConsoleOutputStream(ConsoleOutputSniffer.java:162)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.close(ConsoleOutputSniffer.java:70)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.close(ProcessClosure.java:101)
+	at org.eclipse.cdt.internal.core.ProcessClosure.isAlive(ProcessClosure.java:194)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:248)
+	at org.eclipse.cdt.core.CommandLauncherManager$CommandLauncherWrapper.waitAndRead(CommandLauncherManager.java:161)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:284)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeExternalBuild(ExternalBuildRunner.java:140)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:73)
+	at de.marw.cdt.cmake.core.internal.CMakeBuildRunner.invokeBuild(CMakeBuildRunner.java:129)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:783)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:533)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:471)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:490)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:288)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory cannot be found by de.marw.cmake.cdt_1.2.1.202501301713
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:562)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:557)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 32 more
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 11:49:57.466
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 11:49:57.738
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 11:51:12.258
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 11:51:12.372
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 11:51:13.221
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 11:51:13.340
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2025-12-19 11:51:13.343
+!MESSAGE GDB SERVER COMMAND :C:\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type opella-xd --transport-type jtag --device  --gdb-port 49223 --jtag-frequency 16000KHz --tap-number 1 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2025-12-19 11:51:13.641
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@30c2b0e0): Status ERROR: com.ashling.riscfree.debug.opxd code=0 
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Error: Missing device name after --device option.
+Error: 
+ org.eclipse.core.runtime.CoreException: 
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Error: Missing device name after --device option.
+Error: 
+' resulted in an error.
+!SUBENTRY 1 com.ashling.riscfree.debug.opxd 4 0 2025-12-19 11:51:13.641
+!MESSAGE 
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Error: Missing device name after --device option.
+Error: 
+
+!STACK 1
+org.eclipse.core.runtime.CoreException: 
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Error: Missing device name after --device option.
+Error: 
+
+	at com.ashling.riscfree.debug.opxd.dsf.GdbServerBackend.launchGdbServerProcess(GdbServerBackend.java:361)
+	at com.ashling.riscfree.debug.opxd.dsf.GdbServerBackend$GdbServerStep$2.run(GdbServerBackend.java:763)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 2 com.ashling.riscfree.debug.opxd 4 0 2025-12-19 11:51:13.641
+!MESSAGE 
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Error: Missing device name after --device option.
+Error: 
+
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2025-12-19 11:51:13.652
+!MESSAGE Error in GDB server launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: 
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Error: Missing device name after --device option.
+Error: 
+
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:599)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.eclipse.core.runtime.CoreException: 
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Error: Missing device name after --device option.
+Error: 
+
+	at com.ashling.riscfree.debug.opxd.dsf.GdbServerBackend.launchGdbServerProcess(GdbServerBackend.java:361)
+	at com.ashling.riscfree.debug.opxd.dsf.GdbServerBackend$GdbServerStep$2.run(GdbServerBackend.java:763)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 com.ashling.riscfree.debug.opxd 4 0 2025-12-19 11:51:13.652
+!MESSAGE 
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Error: Missing device name after --device option.
+Error: 
+
+!STACK 1
+org.eclipse.core.runtime.CoreException: 
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Error: Missing device name after --device option.
+Error: 
+
+	at com.ashling.riscfree.debug.opxd.dsf.GdbServerBackend.launchGdbServerProcess(GdbServerBackend.java:361)
+	at com.ashling.riscfree.debug.opxd.dsf.GdbServerBackend$GdbServerStep$2.run(GdbServerBackend.java:763)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 2 com.ashling.riscfree.debug.opxd 4 0 2025-12-19 11:51:13.652
+!MESSAGE 
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Error: Missing device name after --device option.
+Error: 
+
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 11:53:11.245
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 11:53:11.415
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 11:53:17.699
+!MESSAGE Detecting scan chain for serial number=1 jtagFreq=16000KHz tapReset=1
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 11:53:18.425
+!MESSAGE TapDetails [tapNumber=1, irLength=4, idCode=1268778103, name=SOCVHPS, numberOfCores=0, decimalNumberSystem=false]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 11:53:18.426
+!MESSAGE TapDetails [tapNumber=2, irLength=10, idCode=47194333, name=5CSEBA6(.|ES)/5CSEMA6/.., numberOfCores=1, decimalNumberSystem=false]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 11:53:18.426
+!MESSAGE CoreDetails [coreId=144207360, name=Nios V, coreIndex=0]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 11:53:36.237
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 11:53:36.352
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2025-12-19 11:53:36.540
+!MESSAGE GDB SERVER COMMAND :C:\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x4BA00477 --auto-detect true --gdb-port 62306 --jtag-frequency 16000KHz --tap-number 1 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2025-12-19 11:53:38.380
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@4d18578f): Status ERROR: com.ashling.riscfree.debug.opxd code=-1 GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Unable to get VJTAG nodes 
+Cannot lock device 1 for operation.
+USB driver error occurred
+Unable to get VJTAG nodes 
+Cannot lock device 1 for operation.
+USB driver error occurred
+' resulted in an error.
+!SUBENTRY 1 com.ashling.riscfree.debug.opxd 4 -1 2025-12-19 11:53:38.381
+!MESSAGE GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Unable to get VJTAG nodes 
+Cannot lock device 1 for operation.
+USB driver error occurred
+Unable to get VJTAG nodes 
+Cannot lock device 1 for operation.
+USB driver error occurred
+
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2025-12-19 11:53:38.387
+!MESSAGE Error in GDB server launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Unable to get VJTAG nodes 
+Cannot lock device 1 for operation.
+USB driver error occurred
+Unable to get VJTAG nodes 
+Cannot lock device 1 for operation.
+USB driver error occurred
+
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:599)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+!SUBENTRY 1 com.ashling.riscfree.debug.opxd 4 -1 2025-12-19 11:53:38.388
+!MESSAGE GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Unable to get VJTAG nodes 
+Cannot lock device 1 for operation.
+USB driver error occurred
+Unable to get VJTAG nodes 
+Cannot lock device 1 for operation.
+USB driver error occurred
+
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 11:54:21.650
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 11:54:21.770
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2025-12-19 11:54:22.008
+!MESSAGE GDB SERVER COMMAND :C:\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x4BA00477 --auto-detect true --gdb-port 49841 --jtag-frequency 16000KHz --tap-number 1 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2025-12-19 11:54:23.861
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@28fa338d): Status ERROR: com.ashling.riscfree.debug.opxd code=-1 GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Unable to get VJTAG nodes 
+Cannot lock device 1 for operation.
+USB driver error occurred
+Unable to get VJTAG nodes 
+Cannot lock device 1 for operation.
+USB driver error occurred
+' resulted in an error.
+!SUBENTRY 1 com.ashling.riscfree.debug.opxd 4 -1 2025-12-19 11:54:23.861
+!MESSAGE GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Unable to get VJTAG nodes 
+Cannot lock device 1 for operation.
+USB driver error occurred
+Unable to get VJTAG nodes 
+Cannot lock device 1 for operation.
+USB driver error occurred
+
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2025-12-19 11:54:23.867
+!MESSAGE Error in GDB server launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Unable to get VJTAG nodes 
+Cannot lock device 1 for operation.
+USB driver error occurred
+Unable to get VJTAG nodes 
+Cannot lock device 1 for operation.
+USB driver error occurred
+
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:599)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+!SUBENTRY 1 com.ashling.riscfree.debug.opxd 4 -1 2025-12-19 11:54:23.867
+!MESSAGE GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Unable to get VJTAG nodes 
+Cannot lock device 1 for operation.
+USB driver error occurred
+Unable to get VJTAG nodes 
+Cannot lock device 1 for operation.
+USB driver error occurred
+
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 11:54:28.979
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 11:54:29.102
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-12-19 12:09:45.216
+!MESSAGE Error: Not ELF format
+!STACK 0
+java.io.IOException: Not ELF format
+	at org.eclipse.cdt.utils.elf.Elf$ELFhdr.<init>(Elf.java:198)
+	at org.eclipse.cdt.utils.elf.Elf.commonSetup(Elf.java:702)
+	at org.eclipse.cdt.utils.elf.Elf.<init>(Elf.java:721)
+	at org.eclipse.cdt.utils.elf.Elf.getAttributes(Elf.java:969)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getAttribute(ElfParser.java:137)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getBinary(ElfParser.java:55)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getBinary(ElfParser.java:41)
+	at org.eclipse.cdt.launch.LaunchUtils.getBinary(LaunchUtils.java:235)
+	at org.eclipse.tcf.internal.cdt.ui.TCFLaunchContext.isBinary(TCFLaunchContext.java:277)
+	at org.eclipse.tcf.internal.debug.ui.launch.TCFPropertyTester.testIsExecutable(TCFPropertyTester.java:51)
+	at org.eclipse.tcf.internal.debug.ui.launch.TCFPropertyTester.test(TCFPropertyTester.java:32)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:273)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:468)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:254)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-12-19 12:09:45.216
+!MESSAGE Error: Not ELF format
+!STACK 0
+java.io.IOException: Not ELF format
+	at org.eclipse.cdt.utils.elf.Elf$ELFhdr.<init>(Elf.java:198)
+	at org.eclipse.cdt.utils.elf.Elf.commonSetup(Elf.java:702)
+	at org.eclipse.cdt.utils.elf.Elf.<init>(Elf.java:721)
+	at org.eclipse.cdt.utils.elf.Elf.getAttributes(Elf.java:969)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getAttribute(ElfParser.java:137)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getBinary(ElfParser.java:55)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getBinary(ElfParser.java:41)
+	at org.eclipse.cdt.launch.LaunchUtils.getBinary(LaunchUtils.java:235)
+	at org.eclipse.tcf.internal.cdt.ui.TCFLaunchContext.isBinary(TCFLaunchContext.java:277)
+	at org.eclipse.tcf.internal.debug.ui.launch.TCFPropertyTester.testIsExecutable(TCFPropertyTester.java:51)
+	at org.eclipse.tcf.internal.debug.ui.launch.TCFPropertyTester.test(TCFPropertyTester.java:32)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:273)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:468)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:254)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-12-19 12:09:45.218
+!MESSAGE Error: Not ELF format
+!STACK 0
+java.io.IOException: Not ELF format
+	at org.eclipse.cdt.utils.elf.Elf$ELFhdr.<init>(Elf.java:198)
+	at org.eclipse.cdt.utils.elf.Elf.commonSetup(Elf.java:702)
+	at org.eclipse.cdt.utils.elf.Elf.<init>(Elf.java:721)
+	at org.eclipse.cdt.utils.elf.Elf.getAttributes(Elf.java:969)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getAttribute(ElfParser.java:137)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getBinary(ElfParser.java:55)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getBinary(ElfParser.java:41)
+	at org.eclipse.cdt.launch.LaunchUtils.getBinary(LaunchUtils.java:245)
+	at org.eclipse.tcf.internal.cdt.ui.TCFLaunchContext.isBinary(TCFLaunchContext.java:277)
+	at org.eclipse.tcf.internal.debug.ui.launch.TCFPropertyTester.testIsExecutable(TCFPropertyTester.java:51)
+	at org.eclipse.tcf.internal.debug.ui.launch.TCFPropertyTester.test(TCFPropertyTester.java:32)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:273)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:468)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:254)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-12-19 12:09:45.225
+!MESSAGE Error: Not ELF format
+!STACK 0
+java.io.IOException: Not ELF format
+	at org.eclipse.cdt.utils.elf.Elf$ELFhdr.<init>(Elf.java:198)
+	at org.eclipse.cdt.utils.elf.Elf.commonSetup(Elf.java:702)
+	at org.eclipse.cdt.utils.elf.Elf.<init>(Elf.java:721)
+	at org.eclipse.cdt.utils.elf.Elf.getAttributes(Elf.java:969)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getAttribute(ElfParser.java:137)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getBinary(ElfParser.java:55)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getBinary(ElfParser.java:41)
+	at org.eclipse.cdt.launch.LaunchUtils.getBinary(LaunchUtils.java:235)
+	at org.eclipse.tcf.internal.cdt.ui.TCFLaunchContext.isBinary(TCFLaunchContext.java:277)
+	at org.eclipse.tcf.internal.debug.ui.launch.TCFPropertyTester.testIsExecutable(TCFPropertyTester.java:51)
+	at org.eclipse.tcf.internal.debug.ui.launch.TCFPropertyTester.test(TCFPropertyTester.java:32)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:273)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:468)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:254)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-12-19 12:09:45.226
+!MESSAGE Error: Not ELF format
+!STACK 0
+java.io.IOException: Not ELF format
+	at org.eclipse.cdt.utils.elf.Elf$ELFhdr.<init>(Elf.java:198)
+	at org.eclipse.cdt.utils.elf.Elf.commonSetup(Elf.java:702)
+	at org.eclipse.cdt.utils.elf.Elf.<init>(Elf.java:721)
+	at org.eclipse.cdt.utils.elf.Elf.getAttributes(Elf.java:969)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getAttribute(ElfParser.java:137)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getBinary(ElfParser.java:55)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getBinary(ElfParser.java:41)
+	at org.eclipse.cdt.launch.LaunchUtils.getBinary(LaunchUtils.java:235)
+	at org.eclipse.tcf.internal.cdt.ui.TCFLaunchContext.isBinary(TCFLaunchContext.java:277)
+	at org.eclipse.tcf.internal.debug.ui.launch.TCFPropertyTester.testIsExecutable(TCFPropertyTester.java:51)
+	at org.eclipse.tcf.internal.debug.ui.launch.TCFPropertyTester.test(TCFPropertyTester.java:32)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:273)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:468)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:254)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-12-19 12:09:45.226
+!MESSAGE Error: Not ELF format
+!STACK 0
+java.io.IOException: Not ELF format
+	at org.eclipse.cdt.utils.elf.Elf$ELFhdr.<init>(Elf.java:198)
+	at org.eclipse.cdt.utils.elf.Elf.commonSetup(Elf.java:702)
+	at org.eclipse.cdt.utils.elf.Elf.<init>(Elf.java:721)
+	at org.eclipse.cdt.utils.elf.Elf.getAttributes(Elf.java:969)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getAttribute(ElfParser.java:137)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getBinary(ElfParser.java:55)
+	at org.eclipse.cdt.utils.elf.parser.ElfParser.getBinary(ElfParser.java:41)
+	at org.eclipse.cdt.launch.LaunchUtils.getBinary(LaunchUtils.java:245)
+	at org.eclipse.tcf.internal.cdt.ui.TCFLaunchContext.isBinary(TCFLaunchContext.java:277)
+	at org.eclipse.tcf.internal.debug.ui.launch.TCFPropertyTester.testIsExecutable(TCFPropertyTester.java:51)
+	at org.eclipse.tcf.internal.debug.ui.launch.TCFPropertyTester.test(TCFPropertyTester.java:32)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:273)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:468)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:254)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-12-19 12:11:54.804
+!MESSAGE Error: Could not initialize class org.eclipse.jetty.util.ajax.JSON
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.jetty.util.ajax.JSON
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.shutdown(CompileCommandsJsonParser.java:612)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.closeConsoleOutputStream(ConsoleOutputSniffer.java:162)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.close(ConsoleOutputSniffer.java:70)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.close(ProcessClosure.java:101)
+	at org.eclipse.cdt.internal.core.ProcessClosure.isAlive(ProcessClosure.java:194)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:248)
+	at org.eclipse.cdt.core.CommandLauncherManager$CommandLauncherWrapper.waitAndRead(CommandLauncherManager.java:161)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:284)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeExternalBuild(ExternalBuildRunner.java:140)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:73)
+	at de.marw.cdt.cmake.core.internal.CMakeBuildRunner.invokeBuild(CMakeBuildRunner.java:129)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:783)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:530)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:471)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:490)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:288)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory [in thread "Worker-5: Build Project"]
+	at org.eclipse.jetty.util.log.Log.getLogger(Log.java:31)
+	at org.eclipse.jetty.util.ajax.JSON.<clinit>(JSON.java:90)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.shutdown(CompileCommandsJsonParser.java:612)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.closeConsoleOutputStream(ConsoleOutputSniffer.java:162)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.close(ConsoleOutputSniffer.java:70)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.close(ProcessClosure.java:101)
+	at org.eclipse.cdt.internal.core.ProcessClosure.isAlive(ProcessClosure.java:194)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:248)
+	at org.eclipse.cdt.core.CommandLauncherManager$CommandLauncherWrapper.waitAndRead(CommandLauncherManager.java:161)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:284)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeExternalBuild(ExternalBuildRunner.java:140)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:73)
+	at de.marw.cdt.cmake.core.internal.CMakeBuildRunner.invokeBuild(CMakeBuildRunner.java:129)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:783)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:533)
+	... 16 more
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 12:11:59.198
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 12:11:59.495
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2025-12-19 12:12:00.038
+!MESSAGE GDB SERVER COMMAND :C:\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x4BA00477 --auto-detect true --gdb-port 51299 --jtag-frequency 16000KHz --tap-number 1 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2025-12-19 12:12:02.228
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@26693998): Status ERROR: com.ashling.riscfree.debug.opxd code=-1 GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Unable to get VJTAG nodes 
+Cannot lock device 1 for operation.
+USB driver error occurred
+Unable to get VJTAG nodes 
+Cannot lock device 1 for operation.
+USB driver error occurred
+' resulted in an error.
+!SUBENTRY 1 com.ashling.riscfree.debug.opxd 4 -1 2025-12-19 12:12:02.228
+!MESSAGE GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Unable to get VJTAG nodes 
+Cannot lock device 1 for operation.
+USB driver error occurred
+Unable to get VJTAG nodes 
+Cannot lock device 1 for operation.
+USB driver error occurred
+
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2025-12-19 12:12:02.234
+!MESSAGE Error in GDB server launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Unable to get VJTAG nodes 
+Cannot lock device 1 for operation.
+USB driver error occurred
+Unable to get VJTAG nodes 
+Cannot lock device 1 for operation.
+USB driver error occurred
+
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:599)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+!SUBENTRY 1 com.ashling.riscfree.debug.opxd 4 -1 2025-12-19 12:12:02.235
+!MESSAGE GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Unable to get VJTAG nodes 
+Cannot lock device 1 for operation.
+USB driver error occurred
+Unable to get VJTAG nodes 
+Cannot lock device 1 for operation.
+USB driver error occurred
+
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 12:12:12.393
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 12:12:12.511
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 12:12:31.125
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 12:12:31.248
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 12:12:43.122
+!MESSAGE Detecting scan chain for serial number=1 jtagFreq=16000KHz tapReset=1
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 12:12:43.859
+!MESSAGE TapDetails [tapNumber=1, irLength=4, idCode=1268778103, name=SOCVHPS, numberOfCores=0, decimalNumberSystem=false]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 12:12:43.859
+!MESSAGE TapDetails [tapNumber=2, irLength=10, idCode=47194333, name=5CSEBA6(.|ES)/5CSEMA6/.., numberOfCores=1, decimalNumberSystem=false]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 12:12:43.860
+!MESSAGE CoreDetails [coreId=144207360, name=Nios V, coreIndex=0]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 12:12:44.034
+!MESSAGE Detecting scan chain for serial number=1 jtagFreq=16000KHz tapReset=1
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 12:12:44.765
+!MESSAGE TapDetails [tapNumber=1, irLength=4, idCode=1268778103, name=SOCVHPS, numberOfCores=0, decimalNumberSystem=false]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 12:12:44.766
+!MESSAGE TapDetails [tapNumber=2, irLength=10, idCode=47194333, name=5CSEBA6(.|ES)/5CSEMA6/.., numberOfCores=1, decimalNumberSystem=false]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 12:12:44.766
+!MESSAGE CoreDetails [coreId=144207360, name=Nios V, coreIndex=0]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 12:12:45.297
+!MESSAGE Detecting scan chain for serial number=1 jtagFreq=16000KHz tapReset=1
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 12:12:46.030
+!MESSAGE TapDetails [tapNumber=1, irLength=4, idCode=1268778103, name=SOCVHPS, numberOfCores=0, decimalNumberSystem=false]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 12:12:46.031
+!MESSAGE TapDetails [tapNumber=2, irLength=10, idCode=47194333, name=5CSEBA6(.|ES)/5CSEMA6/.., numberOfCores=1, decimalNumberSystem=false]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 12:12:46.031
+!MESSAGE CoreDetails [coreId=144207360, name=Nios V, coreIndex=0]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 12:12:46.084
+!MESSAGE Detecting scan chain for serial number=1 jtagFreq=16000KHz tapReset=1
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 12:12:46.827
+!MESSAGE TapDetails [tapNumber=1, irLength=4, idCode=1268778103, name=SOCVHPS, numberOfCores=0, decimalNumberSystem=false]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 12:12:46.828
+!MESSAGE TapDetails [tapNumber=2, irLength=10, idCode=47194333, name=5CSEBA6(.|ES)/5CSEMA6/.., numberOfCores=1, decimalNumberSystem=false]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 12:12:46.829
+!MESSAGE CoreDetails [coreId=144207360, name=Nios V, coreIndex=0]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 12:12:47.260
+!MESSAGE Detecting scan chain for serial number=1 jtagFreq=16000KHz tapReset=1
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 12:12:47.992
+!MESSAGE TapDetails [tapNumber=1, irLength=4, idCode=1268778103, name=SOCVHPS, numberOfCores=0, decimalNumberSystem=false]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 12:12:47.994
+!MESSAGE TapDetails [tapNumber=2, irLength=10, idCode=47194333, name=5CSEBA6(.|ES)/5CSEMA6/.., numberOfCores=1, decimalNumberSystem=false]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 12:12:47.994
+!MESSAGE CoreDetails [coreId=144207360, name=Nios V, coreIndex=0]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 12:13:05.574
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2025-12-19 12:13:05.700
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2025-12-19 12:13:06.119
+!MESSAGE GDB SERVER COMMAND :C:\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x4BA00477 --auto-detect true --gdb-port 50211 --jtag-frequency 16000KHz --tap-number 1 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2025-12-19 12:13:08.016
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@4b49365e): Status ERROR: com.ashling.riscfree.debug.opxd code=-1 GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Unable to get VJTAG nodes 
+Cannot lock device 1 for operation.
+USB driver error occurred
+Unable to get VJTAG nodes 
+Cannot lock device 1 for operation.
+USB driver error occurred
+' resulted in an error.
+!SUBENTRY 1 com.ashling.riscfree.debug.opxd 4 -1 2025-12-19 12:13:08.016
+!MESSAGE GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Unable to get VJTAG nodes 
+Cannot lock device 1 for operation.
+USB driver error occurred
+Unable to get VJTAG nodes 
+Cannot lock device 1 for operation.
+USB driver error occurred
+
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2025-12-19 12:13:08.021
+!MESSAGE Error in GDB server launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Unable to get VJTAG nodes 
+Cannot lock device 1 for operation.
+USB driver error occurred
+Unable to get VJTAG nodes 
+Cannot lock device 1 for operation.
+USB driver error occurred
+
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:599)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+!SUBENTRY 1 com.ashling.riscfree.debug.opxd 4 -1 2025-12-19 12:13:08.021
+!MESSAGE GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Unable to get VJTAG nodes 
+Cannot lock device 1 for operation.
+USB driver error occurred
+Unable to get VJTAG nodes 
+Cannot lock device 1 for operation.
+USB driver error occurred
+
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-12-19 13:39:49.269
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.cdt.core.CCorePlugin.stop() of bundle org.eclipse.cdt.core.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:923)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2116)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1986)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.content.IContentTypeManager.removeContentTypeChangeListener(org.eclipse.core.runtime.content.IContentTypeManager$IContentTypeChangeListener)" because the return value of "org.eclipse.core.runtime.Platform.getContentTypeManager()" is null
+	at org.eclipse.cdt.internal.core.model.CModelManager.shutdown(CModelManager.java:1378)
+	at org.eclipse.cdt.core.model.CoreModel.shutdown(CoreModel.java:1156)
+	at org.eclipse.cdt.core.CCorePlugin.stop(CCorePlugin.java:375)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:903)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	... 13 more
+Root exception:
+java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.content.IContentTypeManager.removeContentTypeChangeListener(org.eclipse.core.runtime.content.IContentTypeManager$IContentTypeChangeListener)" because the return value of "org.eclipse.core.runtime.Platform.getContentTypeManager()" is null
+	at org.eclipse.cdt.internal.core.model.CModelManager.shutdown(CModelManager.java:1378)
+	at org.eclipse.cdt.core.model.CoreModel.shutdown(CoreModel.java:1156)
+	at org.eclipse.cdt.core.CCorePlugin.stop(CCorePlugin.java:375)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:903)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2116)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1986)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
