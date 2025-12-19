@@ -70,11 +70,14 @@ architecture rtl of telecran is
 	signal s_x_encoder : natural range 0 to h_res-1 := 0;
    signal s_y_encoder : natural range 0 to v_res-1 := 0;
 	
-	signal s_pixel_addr_a : natural range 0 to 720*480-1;
-	signal s_pixel_addr_b : natural range 0 to 720*480-1;
+	signal s_pixel_addr_a : natural range 0 to h_res*v_res-1;
+	signal s_pixel_addr_b : natural range 0 to h_res*v_res-1;
 	
 	signal s_data_a : std_logic_vector(8-1 downto 0);
 	signal s_data_out : std_logic_vector(8-1 downto 0);
+	
+	signal s_clear_flag : std_logic := '0';
+	signal s_clear_addr : natural range 0 to h_res*v_res-1 := 0;
 
 begin
 	-- o_leds <= (others => '0');
@@ -164,25 +167,37 @@ begin
 	
 	o_hdmi_tx_clk <= s_clk_27;
 	
-	
-	--o_hdmi_tx_d(23 downto 16) <= x"FF";
-	--o_hdmi_tx_d(15 downto 8) <= x"FF";
-	--o_hdmi_tx_d(7 downto 0) <= x"FF";
-	
---	process(s_x_counter, s_x_encoder, s_y_counter, s_y_encoder)
---	begin
---	
---		if (s_x_counter = s_x_encoder) and (s_y_counter = s_y_encoder) then 
---			o_hdmi_tx_d <= x"FFFFFF";
---		else 
---			o_hdmi_tx_d <= x"000000";
---		end if;
---
---	end process;
-	
 
-	s_pixel_addr_a <= s_x_encoder + (s_y_encoder * h_res);
-	s_data_a <= x"FF";
+	process(i_clk_50)
+	begin 
+		if rising_edge(i_clk_50) then
+		
+			if (i_right_pb = '0') then
+				s_clear_flag <= '1';
+				s_clear_addr <= 0;
+				
+			end if; 
+			
+			if (s_clear_flag = '1') then 
+				s_pixel_addr_a <= s_clear_addr;
+				s_data_a <= x"00";
+				
+				if (s_clear_addr = h_res*v_res-1) then 
+					s_clear_flag <= '0';
+					s_clear_addr <= 0;
+				else 
+					s_clear_addr <= s_clear_addr + 1;
+				
+				end if;
+			else 
+				s_pixel_addr_a <= s_x_encoder + (s_y_encoder * h_res);
+				s_data_a <= x"FF";
+				
+			end if;
+		end if;
+		
+	
+	end process;
 	
 	o_hdmi_tx_d(23 downto 16) <= s_data_out;
 	
