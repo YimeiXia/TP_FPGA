@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include <unistd.h>
+#include "system.h"
+#include "altera_avalon_pio_regs.h"
+#include "altera_avalon_i2c.h"
+
+
+#define ADXL343_ADDR 0x53
+
+
+
+void ADXL343_Write(ALT_AVALON_I2C_DEV_t * i2c_dev, alt_u8 reg, alt_u8 value)
+{
+	alt_u8 txbuffer[2] = {reg, value};
+
+	ALT_AVALON_I2C_STATUS_CODE ret;
+	ret = alt_avalon_i2c_master_tx(i2c_dev, txbuffer, 2, ALT_AVALON_I2C_NO_INTERRUPTS);
+}
+
+
+void ADXL343_Read(ALT_AVALON_I2C_DEV_t * i2c_dev, alt_u8 reg, alt_u8 *rxbuffer, alt_u32 size)
+{
+	alt_u8 txbuffer[1] = {reg};
+
+	ALT_AVALON_I2C_STATUS_CODE ret;
+
+	ret = alt_avalon_i2c_master_tx_rx(i2c_dev, txbuffer, 1, rxbuffer, size, ALT_AVALON_I2C_NO_INTERRUPTS);
+}
+
+int main (void)
+{
+	printf("Hello, world! please 7 \r\n");
+
+	short led_value = 0x1;
+
+	ALT_AVALON_I2C_DEV_t * i2c_dev;
+	i2c_dev = alt_avalon_i2c_open("i2c_0");
+
+	alt_avalon_i2c_master_target_set(i2c_dev, ADXL343_ADDR);
+
+	alt_u8 rxbuffer[5];
+
+	// reading id
+	ADXL343_Read(i2c_dev, 0x00, rxbuffer, 1);
+	printf("id de l'acc %x", rxbuffer[0]);
+
+
+	while(1)
+	{
+		IOWR_ALTERA_AVALON_PIO_DATA(PIO_0_BASE, led_value);
+
+		led_value = led_value << 1;
+		if (led_value == 0x400) led_value = 0x1;
+
+		usleep(100000);
+	}
+
+	return 0;
+}

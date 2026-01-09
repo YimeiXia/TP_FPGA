@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <unistd.h> // for usleep
+
+#include "system.h"
+#include "altera_avalon_pio_regs.h"
+
+int main (void)
+{
+	printf("Hello, world! please 5 \r\n");
+
+	short led_value = 0x1;
+
+	while(1)
+	{
+		IOWR_ALTERA_AVALON_PIO_DATA(PIO_0_BASE, led_value);
+
+		led_value = led_value << 1;
+		printf("%x\n",led_value);
+		if (led_value == 0x400) led_value = 0x1;
+
+		usleep(100000);
+	}
+
+	return 0;
+}
