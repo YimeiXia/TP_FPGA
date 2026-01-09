@@ -2098,6 +2098,30 @@ alt_sys_init.c.s:
 	cd C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/app/build/Default && $(MAKE) $(MAKESILENT) -f bsp/CMakeFiles/hal2_bsp.dir/build.make bsp/CMakeFiles/hal2_bsp.dir/alt_sys_init.c.s
 .PHONY : alt_sys_init.c.s
 
+drivers/src/altera_avalon_i2c.obj: drivers/src/altera_avalon_i2c.c.obj
+.PHONY : drivers/src/altera_avalon_i2c.obj
+
+# target to build an object file
+drivers/src/altera_avalon_i2c.c.obj:
+	cd C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/app/build/Default && $(MAKE) $(MAKESILENT) -f bsp/CMakeFiles/hal2_bsp.dir/build.make bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_i2c.c.obj
+.PHONY : drivers/src/altera_avalon_i2c.c.obj
+
+drivers/src/altera_avalon_i2c.i: drivers/src/altera_avalon_i2c.c.i
+.PHONY : drivers/src/altera_avalon_i2c.i
+
+# target to preprocess a source file
+drivers/src/altera_avalon_i2c.c.i:
+	cd C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/app/build/Default && $(MAKE) $(MAKESILENT) -f bsp/CMakeFiles/hal2_bsp.dir/build.make bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_i2c.c.i
+.PHONY : drivers/src/altera_avalon_i2c.c.i
+
+drivers/src/altera_avalon_i2c.s: drivers/src/altera_avalon_i2c.c.s
+.PHONY : drivers/src/altera_avalon_i2c.s
+
+# target to generate assembly for a file
+drivers/src/altera_avalon_i2c.c.s:
+	cd C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/app/build/Default && $(MAKE) $(MAKESILENT) -f bsp/CMakeFiles/hal2_bsp.dir/build.make bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_i2c.c.s
+.PHONY : drivers/src/altera_avalon_i2c.c.s
+
 drivers/src/altera_avalon_jtag_uart_fd.obj: drivers/src/altera_avalon_jtag_uart_fd.c.obj
 .PHONY : drivers/src/altera_avalon_jtag_uart_fd.obj
 
@@ -2473,6 +2497,9 @@ help:
 	@echo "... alt_sys_init.obj"
 	@echo "... alt_sys_init.i"
 	@echo "... alt_sys_init.s"
+	@echo "... drivers/src/altera_avalon_i2c.obj"
+	@echo "... drivers/src/altera_avalon_i2c.i"
+	@echo "... drivers/src/altera_avalon_i2c.s"
 	@echo "... drivers/src/altera_avalon_jtag_uart_fd.obj"
 	@echo "... drivers/src/altera_avalon_jtag_uart_fd.i"
 	@echo "... drivers/src/altera_avalon_jtag_uart_fd.s"

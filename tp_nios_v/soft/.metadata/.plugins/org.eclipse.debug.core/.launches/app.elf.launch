@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="com.ashling.riscfree.debug.opxd.intel.launchConfigurationType">
     <booleanAttribute key="com.ashling.riscfree.debug.opxd.core.attachMode" value="false"/>
+    <stringAttribute key="com.ashling.riscfree.debug.opxd.core.coreNumber" value="0"/>
     <stringAttribute key="com.ashling.riscfree.debug.opxd.core.deviceName" value="DE-SoC [USB-1]"/>
     <booleanAttribute key="com.ashling.riscfree.debug.opxd.core.isCustomRTOS" value="false"/>
     <booleanAttribute key="com.ashling.riscfree.debug.opxd.core.isRTOSDebug" value="false"/>
@@ -11,9 +12,9 @@
     <stringAttribute key="com.ashling.riscfree.debug.opxd.core.rtosType" value="FreeRTOS"/>
     <stringAttribute key="com.ashling.riscfree.debug.opxd.core.rtosVersion" value="10.5.0"/>
     <stringAttribute key="com.ashling.riscfree.debug.opxd.core.serialNumber" value="1"/>
-    <stringAttribute key="com.ashling.riscfree.debug.opxd.core.tapIDCODE" value="0x4BA00477"/>
-    <stringAttribute key="com.ashling.riscfree.debug.opxd.core.tapName" value="SOCVHPS"/>
-    <stringAttribute key="com.ashling.riscfree.debug.opxd.core.tapNumber" value="1"/>
+    <stringAttribute key="com.ashling.riscfree.debug.opxd.core.tapIDCODE" value="0x02D020DD"/>
+    <stringAttribute key="com.ashling.riscfree.debug.opxd.core.tapName" value="5CSEBA6(.|ES)/5CSEMA6/.."/>
+    <stringAttribute key="com.ashling.riscfree.debug.opxd.core.tapNumber" value="2"/>
     <stringAttribute key="com.ashling.riscfree.debug.opxd.core.targetDevice" value="auto-scan"/>
     <stringAttribute key="com.ashling.riscfree.debug.opxd.core.targetRegFile" value="regs/gdb_reg_riscv_rv32.xml"/>
     <stringAttribute key="com.ashling.riscfree.debug.opxd.core.transportType" value="JTAG"/>
@@ -23,8 +24,8 @@
     <stringAttribute key="com.ashling.riscfree.debug.opxd.gdbClientOtherOptions" value=""/>
     <stringAttribute key="com.ashling.riscfree.debug.opxd.gdbCustomInstruction" value="${eclipse_home}/../debugger/gdbserver-riscv/niosv_custom_instr.xml"/>
     <stringAttribute key="com.ashling.riscfree.debug.opxd.otherRunCommands" value=""/>
-    <stringAttribute key="com.ashling.riscfree.debug.opxd.riscv.intel.coreText" value=""/>
-    <stringAttribute key="com.ashling.riscfree.debug.opxd.riscv.intel.tapText" value="SOCVHPS (0x4BA00477)"/>
+    <stringAttribute key="com.ashling.riscfree.debug.opxd.riscv.intel.coreText" value="Nios V (0x08986E00)"/>
+    <stringAttribute key="com.ashling.riscfree.debug.opxd.riscv.intel.tapText" value="5CSEBA6(.|ES)/5CSEMA6/.. (0x02D020DD)"/>
     <booleanAttribute key="com.ashling.riscfree.debug.opxd.tapReset" value="false"/>
     <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.svdPath" value=""/>
     <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.imageFileName" value=""/>
@@ -34,7 +35,7 @@
     <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.loadImage" value="true"/>
     <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.loadSymbols" value="true"/>
     <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.pcRegister" value=""/>
-    <intAttribute key="org.eclipse.cdt.debug.gdbjtag.core.portNumber" value="50211"/>
+    <intAttribute key="org.eclipse.cdt.debug.gdbjtag.core.portNumber" value="63906"/>
     <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.setPcRegister" value="false"/>
     <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.setStopAt" value="true"/>
     <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.stopAt" value="main"/>

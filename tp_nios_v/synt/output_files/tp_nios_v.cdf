@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Ign)
-		Device PartName(5CSEBA6) MfrSpec(OpMask(0));
+		Device PartName(SOCVHPS) MfrSpec(OpMask(0));
 	P ActionCode(Cfg)
 		Device PartName(5CSEBA6U23) Path("C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/synt/output_files/") File("tp_nios_v.sof") MfrSpec(OpMask(1));
 

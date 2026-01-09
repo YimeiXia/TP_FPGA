@@ -139,8 +139,8 @@ altera_reserved_tck          : AB5       : input  : 2.5 V             :         
 AS_DATA3, DATA3              : AB6       :        :                   :         : 3A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB23      :        :                   :         : 5A        :                
 GND                          : AB24      : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB25      :        :                   :         : 5B        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB26      :        :                   :         : 5B        :                
+o_i2c_sdo                    : AB25      : output : 2.5 V             :         : 5B        : Y              
+io_i2c_sda                   : AB26      : bidir  : 2.5 V             :         : 5B        : Y              
 GND                          : AB27      : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB28      :        :                   :         : 6B        :                
 GND                          : AC1       : gnd    :                   :         :           :                
@@ -714,7 +714,7 @@ altera_reserved_tdi          : W10       : input  : 2.5 V             :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : W11       :        :                   :         : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W12       :        :                   :         : 3B        :                
 VCCIO4A                      : W13       : power  :                   : 3.3V    : 4A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : W14       :        :                   :         : 4A        :                
+o_i2c_ncs                    : W14       : output : 3.3-V LVTTL       :         : 4A        : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : W15       :        :                   :         : 5A        :                
 GND                          : W16       : gnd    :                   :         :           :                
 VCCIO5A                      : W17       : power  :                   : 3.3V    : 5A        :                
@@ -735,7 +735,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : Y5        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y8        :        :                   :         : 3A        :                
 altera_reserved_tdo          : Y9        : output : 2.5 V             :         : 3A        : N              
 VCCPGM                       : Y10       : power  :                   : 1.8V/2.5V/3.0V/3.3V :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : Y11       :        :                   :         : 3A        :                
+io_i2c_scl                   : Y11       : bidir  : 2.5 V             :         : 3A        : Y              
 GND                          : Y12       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y13       :        :                   :         : 4A        :                
 GND                          : Y14       : gnd    :                   :         :           :                

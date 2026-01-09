@@ -1,8 +1,85 @@
 #include <stdio.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include "system.h"
+#include "altera_avalon_pio_regs.h"
+#include "altera_avalon_i2c.h"
+
+#define ADXL343_ADDR 0x53
+
+
+void ADXL343_Write(ALT_AVALON_I2C_DEV_t * i2c_dev, alt_u8 reg, alt_u8 value)
+{
+	alt_u8 txbuffer[2] = {reg, value};
+
+	ALT_AVALON_I2C_STATUS_CODE ret;
+	ret = alt_avalon_i2c_master_tx(i2c_dev, txbuffer, 2, ALT_AVALON_I2C_NO_INTERRUPTS);
+}
+
+
+void ADXL343_Read(ALT_AVALON_I2C_DEV_t * i2c_dev, alt_u8 reg, alt_u8 *rxbuffer, alt_u32 size)
+{
+	alt_u8 txbuffer[1] = {reg};
+
+	ALT_AVALON_I2C_STATUS_CODE ret;
+	ret = alt_avalon_i2c_master_tx_rx(i2c_dev, txbuffer, 1, rxbuffer, size, ALT_AVALON_I2C_NO_INTERRUPTS);
+}
+
+
+// on copie la configuration qu'on utilise en projet
+void ADXL343_Configure(ALT_AVALON_I2C_DEV_t * i2c_dev)
+{
+	ADXL343_Write(i2c_dev, 0x2D, 1 << 3);
+	ADXL343_Write(i2c_dev, 0x2E, 0);
+	ADXL343_Write(i2c_dev, 0x31, 1 << 4 | 0x03);
+}
 
 int main (void)
 {
-	printf("Hello, world!\n");
+	printf("Hello, world! please 10 \r\n");
 
+	short led_value = 0x1;
+
+	ALT_AVALON_I2C_DEV_t * i2c_dev;
+	i2c_dev = alt_avalon_i2c_open("/dev/i2c_0");
+
+	alt_avalon_i2c_master_target_set(i2c_dev, ADXL343_ADDR);
+
+	alt_u8 rxbuffer[6];
+
+	// reading id
+	ADXL343_Read(i2c_dev, 0x00, rxbuffer, 1);
+	printf("id de l'acc %x \r\n", rxbuffer[0]);
+
+	ADXL343_Configure(i2c_dev);
+
+	int16_t acc_x, acc_y, acc_z;
+
+	while(1)
+	{
+//		IOWR_ALTERA_AVALON_PIO_DATA(PIO_0_BASE, led_value);
+//
+//		led_value = led_value << 1;
+//		if (led_value == 0x400) led_value = 0x1;
+
+		usleep(100000);
+
+		// Reading acc X, Y and Z
+		ADXL343_Read(i2c_dev, 0x32, rxbuffer, 6);
+		acc_x = (int16_t)((rxbuffer[1] << 8) | rxbuffer[0]);
+		acc_y = (int16_t)((rxbuffer[3] << 8) | rxbuffer[2]);
+		acc_z = (int16_t)((rxbuffer[5] << 8) | rxbuffer[4]);
+
+		printf("ACC x: %d, y: %d, z: %d\r\n", acc_x, acc_y, acc_z);
+
+		if (acc_y > 0)
+			led_value = (int)((acc_y / 6) + 5);
+		else
+			led_value = (int)(abs((acc_y / 6) + 5));
+
+		printf("led value %x \r\n", led_value);
+		IOWR_ALTERA_AVALON_PIO_DATA(PIO_0_BASE, 1 << led_value);
+	}
 	return 0;
 }

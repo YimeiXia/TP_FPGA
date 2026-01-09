@@ -523,6 +523,12 @@
 },
 {
   "directory": "C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/app/build/Default/bsp",
+  "command": "C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe -DALT_LOG_FLAGS=0 -D__hal__ -IC:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/. -IC:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/HAL/inc -IC:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_i2c.c.obj -c C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/drivers/src/altera_avalon_i2c.c",
+  "file": "C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/drivers/src/altera_avalon_i2c.c",
+  "output": "bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_i2c.c.obj"
+},
+{
+  "directory": "C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/app/build/Default/bsp",
   "command": "C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe -DALT_LOG_FLAGS=0 -D__hal__ -IC:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/. -IC:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/HAL/inc -IC:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_fd.c.obj -c C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/drivers/src/altera_avalon_jtag_uart_fd.c",
   "file": "C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/drivers/src/altera_avalon_jtag_uart_fd.c",
   "output": "bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_fd.c.obj"

@@ -900,6 +900,12 @@ bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_iic.c.obj
 
 bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_iic_isr_register.c.obj
  C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/HAL/src/alt_iic_isr_register.c
+ C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/HAL/inc/alt_types.h
+ C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/HAL/inc/intel_niosv.h
+ C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/HAL/inc/io.h
+ C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/HAL/inc/priv/alt_iic_isr_register.h
+ C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/HAL/inc/priv/alt_irq_table.h
+ C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/HAL/inc/sys/alt_irq.h
  C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/linker.h
  C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/system.h
  C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/stddef.h
@@ -2027,6 +2033,8 @@ bsp/CMakeFiles/hal2_bsp.dir/alt_sys_init.c.obj
  C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/HAL/inc/sys/alt_llist.h
  C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/HAL/inc/sys/alt_sys_init.h
  C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/HAL/inc/sys/alt_warning.h
+ C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/drivers/inc/altera_avalon_i2c.h
+ C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/drivers/inc/altera_avalon_i2c_regs.h
  C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/drivers/inc/altera_avalon_jtag_uart.h
  C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/drivers/inc/altera_avalon_jtag_uart_fd.h
  C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/linker.h
@@ -2034,6 +2042,7 @@ bsp/CMakeFiles/hal2_bsp.dir/alt_sys_init.c.obj
  C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/stddef.h
  C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/_ansi.h
  C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/_newlib_version.h
+ C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/errno.h
  C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/_default_types.h
  C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/_types.h
  C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/ieeefp.h
@@ -2044,10 +2053,58 @@ bsp/CMakeFiles/hal2_bsp.dir/alt_sys_init.c.obj
  C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_types.h
  C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/cdefs.h
  C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/config.h
+ C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/errno.h
  C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/features.h
  C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/lock.h
  C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/reent.h
  C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/string.h
+
+bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_i2c.c.obj
+ C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/drivers/src/altera_avalon_i2c.c
+ C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/HAL/inc/alt_types.h
+ C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/HAL/inc/intel_niosv.h
+ C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/HAL/inc/io.h
+ C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/HAL/inc/os/alt_flag.h
+ C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/HAL/inc/os/alt_sem.h
+ C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/HAL/inc/priv/alt_alarm.h
+ C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/HAL/inc/priv/alt_busy_sleep.h
+ C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/HAL/inc/priv/alt_dev_llist.h
+ C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/HAL/inc/priv/alt_no_error.h
+ C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/HAL/inc/sys/alt_alarm.h
+ C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/HAL/inc/sys/alt_dev.h
+ C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/HAL/inc/sys/alt_errno.h
+ C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/HAL/inc/sys/alt_irq.h
+ C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/HAL/inc/sys/alt_llist.h
+ C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/HAL/inc/sys/alt_stdio.h
+ C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/drivers/inc/altera_avalon_i2c.h
+ C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/drivers/inc/altera_avalon_i2c_regs.h
+ C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/linker.h
+ C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/system.h
+ C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/stdarg.h
+ C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/stddef.h
+ C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/13.2.0/include/stdint.h
+ C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/_ansi.h
+ C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/_newlib_version.h
+ C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/alloca.h
+ C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/errno.h
+ C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/_default_types.h
+ C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/_types.h
+ C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/ieeefp.h
+ C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/machine/stdlib.h
+ C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/newlib.h
+ C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/stdint.h
+ C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/stdio.h
+ C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/stdlib.h
+ C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_intsup.h
+ C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_stdint.h
+ C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/_types.h
+ C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/cdefs.h
+ C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/config.h
+ C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/errno.h
+ C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/features.h
+ C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/lock.h
+ C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/reent.h
+ C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/sys/stdio.h
 
 bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_fd.c.obj
  C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/drivers/src/altera_avalon_jtag_uart_fd.c

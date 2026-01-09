@@ -1270,10 +1270,24 @@ bsp/CMakeFiles/hal2_bsp.dir/alt_sys_init.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/hal2_bsp.dir/alt_sys_init.c.s"
 	cd C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/app/build/Default/bsp && C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/alt_sys_init.c -o CMakeFiles/hal2_bsp.dir/alt_sys_init.c.s
 
+bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_i2c.c.obj: bsp/CMakeFiles/hal2_bsp.dir/flags.make
+bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_i2c.c.obj: C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/drivers/src/altera_avalon_i2c.c
+bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_i2c.c.obj: bsp/CMakeFiles/hal2_bsp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_i2c.c.obj"
+	cd C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/app/build/Default/bsp && C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_i2c.c.obj -MF CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_i2c.c.obj.d -o CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_i2c.c.obj -c C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/drivers/src/altera_avalon_i2c.c
+
+bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_i2c.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_i2c.c.i"
+	cd C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/app/build/Default/bsp && C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/drivers/src/altera_avalon_i2c.c > CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_i2c.c.i
+
+bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_i2c.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_i2c.c.s"
+	cd C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/app/build/Default/bsp && C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/drivers/src/altera_avalon_i2c.c -o CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_i2c.c.s
+
 bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_fd.c.obj: bsp/CMakeFiles/hal2_bsp.dir/flags.make
 bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_fd.c.obj: C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/drivers/src/altera_avalon_jtag_uart_fd.c
 bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_fd.c.obj: bsp/CMakeFiles/hal2_bsp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_fd.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_fd.c.obj"
 	cd C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/app/build/Default/bsp && C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_fd.c.obj -MF CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_fd.c.obj.d -o CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_fd.c.obj -c C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/drivers/src/altera_avalon_jtag_uart_fd.c
 
 bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_fd.c.i: cmake_force
@@ -1287,7 +1301,7 @@ bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_fd.c.s: cmake_fo
 bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_init.c.obj: bsp/CMakeFiles/hal2_bsp.dir/flags.make
 bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_init.c.obj: C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/drivers/src/altera_avalon_jtag_uart_init.c
 bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_init.c.obj: bsp/CMakeFiles/hal2_bsp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_init.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_init.c.obj"
 	cd C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/app/build/Default/bsp && C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_init.c.obj -MF CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_init.c.obj.d -o CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_init.c.obj -c C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/drivers/src/altera_avalon_jtag_uart_init.c
 
 bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_init.c.i: cmake_force
@@ -1301,7 +1315,7 @@ bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_init.c.s: cmake_
 bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_ioctl.c.obj: bsp/CMakeFiles/hal2_bsp.dir/flags.make
 bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_ioctl.c.obj: C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/drivers/src/altera_avalon_jtag_uart_ioctl.c
 bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_ioctl.c.obj: bsp/CMakeFiles/hal2_bsp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_ioctl.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_ioctl.c.obj"
 	cd C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/app/build/Default/bsp && C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_ioctl.c.obj -MF CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_ioctl.c.obj.d -o CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_ioctl.c.obj -c C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/drivers/src/altera_avalon_jtag_uart_ioctl.c
 
 bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_ioctl.c.i: cmake_force
@@ -1315,7 +1329,7 @@ bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_ioctl.c.s: cmake
 bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_read.c.obj: bsp/CMakeFiles/hal2_bsp.dir/flags.make
 bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_read.c.obj: C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/drivers/src/altera_avalon_jtag_uart_read.c
 bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_read.c.obj: bsp/CMakeFiles/hal2_bsp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_read.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_read.c.obj"
 	cd C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/app/build/Default/bsp && C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_read.c.obj -MF CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_read.c.obj.d -o CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_read.c.obj -c C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/drivers/src/altera_avalon_jtag_uart_read.c
 
 bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_read.c.i: cmake_force
@@ -1329,7 +1343,7 @@ bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_read.c.s: cmake_
 bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_write.c.obj: bsp/CMakeFiles/hal2_bsp.dir/flags.make
 bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_write.c.obj: C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/drivers/src/altera_avalon_jtag_uart_write.c
 bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_write.c.obj: bsp/CMakeFiles/hal2_bsp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_write.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_write.c.obj"
 	cd C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/app/build/Default/bsp && C:/intelFPGA_lite/24.1std/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_write.c.obj -MF CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_write.c.obj.d -o CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_write.c.obj -c C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/bsp/drivers/src/altera_avalon_jtag_uart_write.c
 
 bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_write.c.i: cmake_force
@@ -1428,6 +1442,7 @@ hal2_bsp_OBJECTS = \
 "CMakeFiles/hal2_bsp.dir/HAL/src/intel_niosv_irq.c.obj" \
 "CMakeFiles/hal2_bsp.dir/HAL/src/mtimer.c.obj" \
 "CMakeFiles/hal2_bsp.dir/alt_sys_init.c.obj" \
+"CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_i2c.c.obj" \
 "CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_fd.c.obj" \
 "CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_init.c.obj" \
 "CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_ioctl.c.obj" \
@@ -1523,6 +1538,7 @@ bsp/libhal2_bsp.a: bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_platform_api_n
 bsp/libhal2_bsp.a: bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_niosv_irq.c.obj
 bsp/libhal2_bsp.a: bsp/CMakeFiles/hal2_bsp.dir/HAL/src/mtimer.c.obj
 bsp/libhal2_bsp.a: bsp/CMakeFiles/hal2_bsp.dir/alt_sys_init.c.obj
+bsp/libhal2_bsp.a: bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_i2c.c.obj
 bsp/libhal2_bsp.a: bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_fd.c.obj
 bsp/libhal2_bsp.a: bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_init.c.obj
 bsp/libhal2_bsp.a: bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_ioctl.c.obj
@@ -1530,7 +1546,7 @@ bsp/libhal2_bsp.a: bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_ua
 bsp/libhal2_bsp.a: bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_write.c.obj
 bsp/libhal2_bsp.a: bsp/CMakeFiles/hal2_bsp.dir/build.make
 bsp/libhal2_bsp.a: bsp/CMakeFiles/hal2_bsp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Linking C static library libhal2_bsp.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/app/build/Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Linking C static library libhal2_bsp.a"
 	cd C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/app/build/Default/bsp && $(CMAKE_COMMAND) -P CMakeFiles/hal2_bsp.dir/cmake_clean_target.cmake
 	cd C:/Users/Kelly/akelly/ENSEA/3A/fpga/tp/TP_FPGA/tp_nios_v/soft/app/build/Default/bsp && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hal2_bsp.dir/link.txt --verbose=$(VERBOSE)
 
