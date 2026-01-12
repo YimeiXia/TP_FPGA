@@ -5,6 +5,9 @@ use ieee.numeric_std.all;
 library pll;
 use pll.all;
 
+library nios;
+use nios.nios;
+
 entity telecran is
     port (
         -- FPGA
@@ -33,7 +36,13 @@ entity telecran is
 		i_left_pb : in std_logic;
 		i_right_ch_a : in std_logic;
 		i_right_ch_b : in std_logic;
-		i_right_pb : in std_logic
+		i_right_pb : in std_logic;
+		
+		-- I2C
+		io_i2c_scl : inout std_logic;
+		io_i2c_sda : inout std_logic;
+		o_i2c_ncs : out std_logic;
+		o_i2c_sdo : out std_logic
     );
 end entity telecran;
 
@@ -78,6 +87,13 @@ architecture rtl of telecran is
 	
 	signal s_clear_flag : std_logic := '0';
 	signal s_clear_addr : natural range 0 to h_res*v_res-1 := 0;
+	
+	signal s_clear_n : std_logic := '1';
+	
+	signal s_i2c_scl_in : std_logic;
+	signal s_i2c_sda_in : std_logic;
+	signal s_i2c_sda_oe : std_logic;
+	signal s_i2c_scl_oe : std_logic;
 
 begin
 	-- o_leds <= (others => '0');
@@ -102,6 +118,28 @@ begin
 			HDMI_TX_INT => i_hdmi_tx_int
 	 );
 	 
+	 nios0 : entity nios.nios
+    port map (
+        clk_clk                          => i_clk_50,
+        reset_reset_n                    => i_rst_n,
+        pio_0_external_connection_export => s_clear_n,
+		  
+		  i2c_0_i2c_serial_sda_in => s_i2c_sda_in,
+        i2c_0_i2c_serial_scl_in => s_i2c_scl_in,
+        i2c_0_i2c_serial_sda_oe => s_i2c_sda_oe,
+        i2c_0_i2c_serial_scl_oe => s_i2c_scl_oe
+		  
+    );
+	 
+	s_i2c_scl_in <= io_i2c_scl;
+	io_i2c_scl <= '0' when s_i2c_scl_oe = '1' else 'Z';
+
+	s_i2c_sda_in <= io_i2c_sda;
+	io_i2c_sda <= '0' when s_i2c_sda_oe = '1' else 'Z';
+
+	o_i2c_ncs <= '1';
+	o_i2c_sdo <= '0';
+		 
 	encodeur_left : entity work.encodeur
 	   generic map (
 			CNT_MAX => h_res
@@ -172,7 +210,7 @@ begin
 	begin 
 		if rising_edge(i_clk_50) then
 		
-			if (i_right_pb = '0') then
+			if (s_clear_n = '0') then
 				s_clear_flag <= '1';
 				s_clear_addr <= 0;
 				

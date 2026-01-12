@@ -1,0 +1,1590 @@
+!SESSION 2026-01-09 16:07:08.427 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=21.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-01-09 16:07:58.657
+!MESSAGE Indexed 'app' (0 sources, 0 headers) in 0,154 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-01-09 16:08:13.600
+!MESSAGE Indexed 'bsp' (86 sources, 86 headers) in 4,1 sec: 2 324 declarations; 5 239 references; 150 unresolved inclusions; 6 syntax errors; 463 unresolved names (5,8 %)
+
+!ENTRY org.eclipse.cdt.core 4 0 2026-01-09 16:11:44.155
+!MESSAGE Error: org/slf4j/LoggerFactory
+!STACK 0
+java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.eclipse.jetty.util.log.Log.getLogger(Log.java:31)
+	at org.eclipse.jetty.util.ajax.JSON.<clinit>(JSON.java:90)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.shutdown(CompileCommandsJsonParser.java:612)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.closeConsoleOutputStream(ConsoleOutputSniffer.java:162)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.close(ConsoleOutputSniffer.java:70)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.close(ProcessClosure.java:101)
+	at org.eclipse.cdt.internal.core.ProcessClosure.isAlive(ProcessClosure.java:194)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:248)
+	at org.eclipse.cdt.core.CommandLauncherManager$CommandLauncherWrapper.waitAndRead(CommandLauncherManager.java:161)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:284)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeExternalBuild(ExternalBuildRunner.java:140)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:73)
+	at de.marw.cdt.cmake.core.internal.CMakeBuildRunner.invokeBuild(CMakeBuildRunner.java:129)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:783)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:533)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:471)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:490)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:288)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory cannot be found by de.marw.cmake.cdt_1.2.1.202501301713
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:562)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:557)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 32 more
+
+!ENTRY org.eclipse.cdt.core 4 0 2026-01-09 16:27:47.382
+!MESSAGE Error: Could not initialize class org.eclipse.jetty.util.ajax.JSON
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.jetty.util.ajax.JSON
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.shutdown(CompileCommandsJsonParser.java:612)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.closeConsoleOutputStream(ConsoleOutputSniffer.java:162)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.close(ConsoleOutputSniffer.java:70)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.close(ProcessClosure.java:101)
+	at org.eclipse.cdt.internal.core.ProcessClosure.isAlive(ProcessClosure.java:194)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:248)
+	at org.eclipse.cdt.core.CommandLauncherManager$CommandLauncherWrapper.waitAndRead(CommandLauncherManager.java:161)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:284)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeExternalBuild(ExternalBuildRunner.java:140)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:73)
+	at de.marw.cdt.cmake.core.internal.CMakeBuildRunner.invokeBuild(CMakeBuildRunner.java:129)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:783)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:530)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:471)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:490)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:288)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory [in thread "Worker-5: Build Project"]
+	at org.eclipse.jetty.util.log.Log.getLogger(Log.java:31)
+	at org.eclipse.jetty.util.ajax.JSON.<clinit>(JSON.java:90)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.shutdown(CompileCommandsJsonParser.java:612)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.closeConsoleOutputStream(ConsoleOutputSniffer.java:162)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.close(ConsoleOutputSniffer.java:70)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.close(ProcessClosure.java:101)
+	at org.eclipse.cdt.internal.core.ProcessClosure.isAlive(ProcessClosure.java:194)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:248)
+	at org.eclipse.cdt.core.CommandLauncherManager$CommandLauncherWrapper.waitAndRead(CommandLauncherManager.java:161)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:284)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeExternalBuild(ExternalBuildRunner.java:140)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:73)
+	at de.marw.cdt.cmake.core.internal.CMakeBuildRunner.invokeBuild(CMakeBuildRunner.java:129)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:783)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:533)
+	... 16 more
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 16:28:10.057
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 16:28:10.311
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 16:28:15.243
+!MESSAGE Detecting scan chain for serial number=1 jtagFreq=16000KHz tapReset=1
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 16:28:16.022
+!MESSAGE TapDetails [tapNumber=1, irLength=4, idCode=1268778103, name=SOCVHPS, numberOfCores=0, decimalNumberSystem=false]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 16:28:16.023
+!MESSAGE TapDetails [tapNumber=2, irLength=10, idCode=47194333, name=5CSEBA6(.|ES)/5CSEMA6/.., numberOfCores=1, decimalNumberSystem=false]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 16:28:16.024
+!MESSAGE CoreDetails [coreId=144207360, name=Nios V, coreIndex=0]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 16:28:23.803
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 16:28:23.927
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-09 16:28:25.256
+!MESSAGE GDB SERVER COMMAND :C:\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 54505 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-09 16:28:26.866
+!MESSAGE C:\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\Users\Kelly\akelly\ENSEA\3A\fpga\tp\TP_FPGA\telecran\soft\app\build\Default\app.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 16:31:28.750
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 16:31:28.938
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-09 16:31:29.125
+!MESSAGE GDB SERVER COMMAND :C:\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 49835 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-09 16:31:30.768
+!MESSAGE C:\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\Users\Kelly\akelly\ENSEA\3A\fpga\tp\TP_FPGA\telecran\soft\app\build\Default\app.elf
+
+!ENTRY com.ashling.riscfree.debug.opxd 4 0 2026-01-09 16:32:54.899
+!MESSAGE Debug session 'app.elf' is already running or not terminated completely.
+
+!ENTRY org.eclipse.cdt.core 4 0 2026-01-09 16:33:15.100
+!MESSAGE Error: Could not initialize class org.eclipse.jetty.util.ajax.JSON
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.jetty.util.ajax.JSON
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.shutdown(CompileCommandsJsonParser.java:612)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.closeConsoleOutputStream(ConsoleOutputSniffer.java:162)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.close(ConsoleOutputSniffer.java:70)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.close(ProcessClosure.java:101)
+	at org.eclipse.cdt.internal.core.ProcessClosure.isAlive(ProcessClosure.java:194)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:248)
+	at org.eclipse.cdt.core.CommandLauncherManager$CommandLauncherWrapper.waitAndRead(CommandLauncherManager.java:161)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:284)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeExternalBuild(ExternalBuildRunner.java:140)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:73)
+	at de.marw.cdt.cmake.core.internal.CMakeBuildRunner.invokeBuild(CMakeBuildRunner.java:129)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:783)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:533)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:471)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:490)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:288)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory [in thread "Worker-5: Build Project"]
+	at org.eclipse.jetty.util.log.Log.getLogger(Log.java:31)
+	at org.eclipse.jetty.util.ajax.JSON.<clinit>(JSON.java:90)
+	... 30 more
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 16:33:50.225
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 16:33:50.467
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-09 16:33:50.703
+!MESSAGE GDB SERVER COMMAND :C:\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 56335 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-09 16:33:52.372
+!MESSAGE C:\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\Users\Kelly\akelly\ENSEA\3A\fpga\tp\TP_FPGA\telecran\soft\app\build\Default\app.elf
+
+!ENTRY com.ashling.riscfree.debug.opxd 4 0 2026-01-09 16:34:56.272
+!MESSAGE Debug session 'app.elf' is already running or not terminated completely.
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 16:35:03.612
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 16:35:03.738
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-09 16:35:04.105
+!MESSAGE GDB SERVER COMMAND :C:\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 61760 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-09 16:35:05.777
+!MESSAGE C:\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\Users\Kelly\akelly\ENSEA\3A\fpga\tp\TP_FPGA\telecran\soft\app\build\Default\app.elf
+
+!ENTRY com.ashling.riscfree.debug.opxd 4 0 2026-01-09 16:36:20.140
+!MESSAGE Debug session 'app.elf' is already running or not terminated completely.
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 16:36:26.298
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 16:36:26.550
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-09 16:36:26.769
+!MESSAGE GDB SERVER COMMAND :C:\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 53687 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-09 16:36:28.440
+!MESSAGE C:\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\Users\Kelly\akelly\ENSEA\3A\fpga\tp\TP_FPGA\telecran\soft\app\build\Default\app.elf
+
+!ENTRY org.eclipse.cdt.core 4 0 2026-01-09 16:39:03.145
+!MESSAGE Error: Could not initialize class org.eclipse.jetty.util.ajax.JSON
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.jetty.util.ajax.JSON
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.shutdown(CompileCommandsJsonParser.java:612)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.closeConsoleOutputStream(ConsoleOutputSniffer.java:162)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.close(ConsoleOutputSniffer.java:70)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.close(ProcessClosure.java:101)
+	at org.eclipse.cdt.internal.core.ProcessClosure.isAlive(ProcessClosure.java:194)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:248)
+	at org.eclipse.cdt.core.CommandLauncherManager$CommandLauncherWrapper.waitAndRead(CommandLauncherManager.java:161)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:284)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeExternalBuild(ExternalBuildRunner.java:140)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:73)
+	at de.marw.cdt.cmake.core.internal.CMakeBuildRunner.invokeBuild(CMakeBuildRunner.java:129)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:783)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:530)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:471)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:490)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:288)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory [in thread "Worker-5: Build Project"]
+	at org.eclipse.jetty.util.log.Log.getLogger(Log.java:31)
+	at org.eclipse.jetty.util.ajax.JSON.<clinit>(JSON.java:90)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.shutdown(CompileCommandsJsonParser.java:612)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.closeConsoleOutputStream(ConsoleOutputSniffer.java:162)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.close(ConsoleOutputSniffer.java:70)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.close(ProcessClosure.java:101)
+	at org.eclipse.cdt.internal.core.ProcessClosure.isAlive(ProcessClosure.java:194)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:248)
+	at org.eclipse.cdt.core.CommandLauncherManager$CommandLauncherWrapper.waitAndRead(CommandLauncherManager.java:161)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:284)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeExternalBuild(ExternalBuildRunner.java:140)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:73)
+	at de.marw.cdt.cmake.core.internal.CMakeBuildRunner.invokeBuild(CMakeBuildRunner.java:129)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:783)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:533)
+	... 16 more
+
+!ENTRY com.ashling.riscfree.debug.opxd 4 0 2026-01-09 16:39:15.510
+!MESSAGE Debug session 'app.elf' is already running or not terminated completely.
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 16:39:33.888
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 16:39:34.077
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-09 16:39:34.268
+!MESSAGE GDB SERVER COMMAND :C:\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 55690 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-09 16:39:35.903
+!MESSAGE C:\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\Users\Kelly\akelly\ENSEA\3A\fpga\tp\TP_FPGA\telecran\soft\app\build\Default\app.elf
+
+!ENTRY org.eclipse.cdt.core 4 0 2026-01-09 16:40:42.069
+!MESSAGE Error: Could not initialize class org.eclipse.jetty.util.ajax.JSON
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.jetty.util.ajax.JSON
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.shutdown(CompileCommandsJsonParser.java:612)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.closeConsoleOutputStream(ConsoleOutputSniffer.java:162)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.close(ConsoleOutputSniffer.java:70)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.close(ProcessClosure.java:101)
+	at org.eclipse.cdt.internal.core.ProcessClosure.isAlive(ProcessClosure.java:194)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:248)
+	at org.eclipse.cdt.core.CommandLauncherManager$CommandLauncherWrapper.waitAndRead(CommandLauncherManager.java:161)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:284)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeExternalBuild(ExternalBuildRunner.java:140)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:73)
+	at de.marw.cdt.cmake.core.internal.CMakeBuildRunner.invokeBuild(CMakeBuildRunner.java:129)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:783)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:530)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:471)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:490)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:288)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory [in thread "Worker-5: Build Project"]
+	at org.eclipse.jetty.util.log.Log.getLogger(Log.java:31)
+	at org.eclipse.jetty.util.ajax.JSON.<clinit>(JSON.java:90)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.shutdown(CompileCommandsJsonParser.java:612)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.closeConsoleOutputStream(ConsoleOutputSniffer.java:162)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.close(ConsoleOutputSniffer.java:70)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.close(ProcessClosure.java:101)
+	at org.eclipse.cdt.internal.core.ProcessClosure.isAlive(ProcessClosure.java:194)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:248)
+	at org.eclipse.cdt.core.CommandLauncherManager$CommandLauncherWrapper.waitAndRead(CommandLauncherManager.java:161)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:284)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeExternalBuild(ExternalBuildRunner.java:140)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:73)
+	at de.marw.cdt.cmake.core.internal.CMakeBuildRunner.invokeBuild(CMakeBuildRunner.java:129)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:783)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:533)
+	... 16 more
+
+!ENTRY com.ashling.riscfree.debug.opxd 4 0 2026-01-09 16:40:54.341
+!MESSAGE Debug session 'app.elf' is already running or not terminated completely.
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 16:40:59.000
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 16:40:59.119
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-09 16:40:59.342
+!MESSAGE GDB SERVER COMMAND :C:\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 54827 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-09 16:41:00.982
+!MESSAGE C:\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\Users\Kelly\akelly\ENSEA\3A\fpga\tp\TP_FPGA\telecran\soft\app\build\Default\app.elf
+
+!ENTRY com.ashling.riscfree.debug.opxd 4 0 2026-01-09 16:41:33.410
+!MESSAGE Debug session 'app.elf' is already running or not terminated completely.
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 16:41:46.867
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 16:41:47.048
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-09 16:41:47.223
+!MESSAGE GDB SERVER COMMAND :C:\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 52870 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-09 16:41:48.780
+!MESSAGE C:\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\Users\Kelly\akelly\ENSEA\3A\fpga\tp\TP_FPGA\telecran\soft\app\build\Default\app.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 16:44:48.339
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 16:44:48.522
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-09 16:44:48.697
+!MESSAGE GDB SERVER COMMAND :C:\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 50770 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-09 16:44:50.293
+!MESSAGE C:\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\Users\Kelly\akelly\ENSEA\3A\fpga\tp\TP_FPGA\telecran\soft\app\build\Default\app.elf
+
+!ENTRY com.ashling.riscfree.debug.opxd 4 0 2026-01-09 16:45:44.241
+!MESSAGE Debug session 'app.elf' is already running or not terminated completely.
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 16:45:50.159
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 16:45:50.282
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-09 16:45:50.519
+!MESSAGE GDB SERVER COMMAND :C:\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 64180 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-09 16:45:52.134
+!MESSAGE C:\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\Users\Kelly\akelly\ENSEA\3A\fpga\tp\TP_FPGA\telecran\soft\app\build\Default\app.elf
+
+!ENTRY com.ashling.riscfree.debug.opxd 4 0 2026-01-09 16:46:41.678
+!MESSAGE Debug session 'app.elf' is already running or not terminated completely.
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 16:46:58.096
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 16:46:58.285
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-09 16:46:58.530
+!MESSAGE GDB SERVER COMMAND :C:\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 56903 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-09 16:47:00.184
+!MESSAGE C:\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\Users\Kelly\akelly\ENSEA\3A\fpga\tp\TP_FPGA\telecran\soft\app\build\Default\app.elf
+
+!ENTRY com.ashling.riscfree.debug.opxd 4 0 2026-01-09 16:48:04.328
+!MESSAGE Debug session 'app.elf' is already running or not terminated completely.
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 16:48:10.187
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 16:48:10.319
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-09 16:48:10.661
+!MESSAGE GDB SERVER COMMAND :C:\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 65459 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-09 16:48:12.409
+!MESSAGE C:\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\Users\Kelly\akelly\ENSEA\3A\fpga\tp\TP_FPGA\telecran\soft\app\build\Default\app.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 16:51:06.574
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 16:51:06.820
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-09 16:51:07.061
+!MESSAGE GDB SERVER COMMAND :C:\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 57705 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-09 16:51:08.732
+!MESSAGE C:\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\Users\Kelly\akelly\ENSEA\3A\fpga\tp\TP_FPGA\telecran\soft\app\build\Default\app.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 16:53:24.496
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 16:53:27.654
+!MESSAGE No Debug probes found
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-09 16:53:27.944
+!MESSAGE GDB SERVER COMMAND :C:\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 55198 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2026-01-09 16:53:31.396
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@4a91a772): Status ERROR: com.ashling.riscfree.debug.opxd code=-1 GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+' resulted in an error.
+!SUBENTRY 1 com.ashling.riscfree.debug.opxd 4 -1 2026-01-09 16:53:31.396
+!MESSAGE GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-09 16:53:31.403
+!MESSAGE Error in GDB server launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:599)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+!SUBENTRY 1 com.ashling.riscfree.debug.opxd 4 -1 2026-01-09 16:53:31.403
+!MESSAGE GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 16:54:41.114
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 16:54:41.129
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-09 16:54:41.331
+!MESSAGE GDB SERVER COMMAND :C:\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 53511 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-09 16:54:42.922
+!MESSAGE C:\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\Users\Kelly\akelly\ENSEA\3A\fpga\tp\TP_FPGA\telecran\soft\app\build\Default\app.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 17:20:33.829
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 17:20:33.902
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-09 17:20:34.054
+!MESSAGE GDB SERVER COMMAND :C:\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 57208 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-09 17:20:35.606
+!MESSAGE C:\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\Users\Kelly\akelly\ENSEA\3A\fpga\tp\TP_FPGA\telecran\soft\app\build\Default\app.elf
+
+!ENTRY org.eclipse.cdt.core 4 0 2026-01-09 17:21:07.659
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.cdt.core.CCorePlugin.stop() of bundle org.eclipse.cdt.core.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:923)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2116)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1986)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.content.IContentTypeManager.removeContentTypeChangeListener(org.eclipse.core.runtime.content.IContentTypeManager$IContentTypeChangeListener)" because the return value of "org.eclipse.core.runtime.Platform.getContentTypeManager()" is null
+	at org.eclipse.cdt.internal.core.model.CModelManager.shutdown(CModelManager.java:1378)
+	at org.eclipse.cdt.core.model.CoreModel.shutdown(CoreModel.java:1156)
+	at org.eclipse.cdt.core.CCorePlugin.stop(CCorePlugin.java:375)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:903)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	... 13 more
+Root exception:
+java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.content.IContentTypeManager.removeContentTypeChangeListener(org.eclipse.core.runtime.content.IContentTypeManager$IContentTypeChangeListener)" because the return value of "org.eclipse.core.runtime.Platform.getContentTypeManager()" is null
+	at org.eclipse.cdt.internal.core.model.CModelManager.shutdown(CModelManager.java:1378)
+	at org.eclipse.cdt.core.model.CoreModel.shutdown(CoreModel.java:1156)
+	at org.eclipse.cdt.core.CCorePlugin.stop(CCorePlugin.java:375)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:903)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2116)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1986)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+!SESSION 2026-01-09 17:21:11.805 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=21.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 0 2026-01-09 17:21:21.333
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.eclipse.jetty.util.log.Log.getLogger(Log.java:31)
+	at org.eclipse.jetty.util.ajax.JSON.<clinit>(JSON.java:90)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.lambda$2(CompileCommandsJsonParser.java:671)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4058)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory cannot be found by de.marw.cmake.cdt_1.2.1.202501301713
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:562)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:557)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 27 more
+
+!ENTRY org.eclipse.ui 4 0 2026-01-09 17:21:21.337
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.jetty.util.ajax.JSON
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.determineBuiltinDetectors(CompileCommandsJsonParser.java:417)
+	at de.marw.cmake.cdt.language.settings.providers.BuiltinsCompileCommandsJsonParser.detectBuiltins(BuiltinsCompileCommandsJsonParser.java:107)
+	at de.marw.cmake.cdt.language.settings.providers.BuiltinsCompileCommandsJsonParser.lambda$1(BuiltinsCompileCommandsJsonParser.java:219)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4058)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory [in thread "main"]
+	at org.eclipse.jetty.util.log.Log.getLogger(Log.java:31)
+	at org.eclipse.jetty.util.ajax.JSON.<clinit>(JSON.java:90)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.lambda$2(CompileCommandsJsonParser.java:671)
+	... 23 more
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 17:22:00.069
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 17:22:00.182
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-09 17:22:00.368
+!MESSAGE GDB SERVER COMMAND :C:\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 64421 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-09 17:22:01.911
+!MESSAGE C:\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\Users\Kelly\akelly\ENSEA\3A\fpga\tp\TP_FPGA\telecran\soft\app\build\Default\app.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 17:23:06.011
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 17:23:09.136
+!MESSAGE No Debug probes found
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-09 17:23:09.335
+!MESSAGE GDB SERVER COMMAND :C:\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 63825 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2026-01-09 17:23:12.739
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@62114b91): Status ERROR: com.ashling.riscfree.debug.opxd code=-1 GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+' resulted in an error.
+!SUBENTRY 1 com.ashling.riscfree.debug.opxd 4 -1 2026-01-09 17:23:12.739
+!MESSAGE GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-09 17:23:12.748
+!MESSAGE Error in GDB server launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:599)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+!SUBENTRY 1 com.ashling.riscfree.debug.opxd 4 -1 2026-01-09 17:23:12.749
+!MESSAGE GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+
+
+!ENTRY org.eclipse.cdt.core 4 0 2026-01-09 17:23:50.402
+!MESSAGE Error: Could not initialize class org.eclipse.jetty.util.ajax.JSON
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.jetty.util.ajax.JSON
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.shutdown(CompileCommandsJsonParser.java:612)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.closeConsoleOutputStream(ConsoleOutputSniffer.java:162)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.close(ConsoleOutputSniffer.java:70)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.close(ProcessClosure.java:101)
+	at org.eclipse.cdt.internal.core.ProcessClosure.isAlive(ProcessClosure.java:194)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:248)
+	at org.eclipse.cdt.core.CommandLauncherManager$CommandLauncherWrapper.waitAndRead(CommandLauncherManager.java:161)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:284)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeExternalBuild(ExternalBuildRunner.java:140)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:73)
+	at de.marw.cdt.cmake.core.internal.CMakeBuildRunner.invokeBuild(CMakeBuildRunner.java:129)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:783)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:530)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:471)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:490)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:288)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory [in thread "main"]
+	at org.eclipse.jetty.util.log.Log.getLogger(Log.java:31)
+	at org.eclipse.jetty.util.ajax.JSON.<clinit>(JSON.java:90)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.lambda$2(CompileCommandsJsonParser.java:671)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4058)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 17:24:06.271
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 17:24:06.289
+!MESSAGE No Debug probes found
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-09 17:24:06.520
+!MESSAGE GDB SERVER COMMAND :C:\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 64685 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2026-01-09 17:24:09.910
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@52861e2): Status ERROR: com.ashling.riscfree.debug.opxd code=-1 GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+' resulted in an error.
+!SUBENTRY 1 com.ashling.riscfree.debug.opxd 4 -1 2026-01-09 17:24:09.910
+!MESSAGE GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-09 17:24:09.917
+!MESSAGE Error in GDB server launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:599)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+!SUBENTRY 1 com.ashling.riscfree.debug.opxd 4 -1 2026-01-09 17:24:09.917
+!MESSAGE GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 17:24:59.653
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.opxd 4 0 2026-01-09 17:25:00.725
+!MESSAGE Debug session 'app.elf' is already running or not terminated completely.
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 17:25:02.814
+!MESSAGE No Debug probes found
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-09 17:25:03.018
+!MESSAGE GDB SERVER COMMAND :C:\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 52711 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2026-01-09 17:25:06.456
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@5fbf20ad): Status ERROR: com.ashling.riscfree.debug.opxd code=-1 GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+' resulted in an error.
+!SUBENTRY 1 com.ashling.riscfree.debug.opxd 4 -1 2026-01-09 17:25:06.457
+!MESSAGE GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-09 17:25:06.465
+!MESSAGE Error in GDB server launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:599)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+!SUBENTRY 1 com.ashling.riscfree.debug.opxd 4 -1 2026-01-09 17:25:06.465
+!MESSAGE GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 17:32:42.667
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 17:32:42.746
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-09 17:32:42.975
+!MESSAGE GDB SERVER COMMAND :C:\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 50493 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-09 17:32:44.576
+!MESSAGE C:\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\Users\Kelly\akelly\ENSEA\3A\fpga\tp\TP_FPGA\telecran\soft\app\build\Default\app.elf
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2026-01-09 17:32:48.377
+!MESSAGE Target not available.
+
+!ENTRY com.ashling.riscfree.debug.opxd 4 0 2026-01-09 17:33:19.623
+!MESSAGE Debug session 'app.elf' is already running or not terminated completely.
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 17:33:24.204
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 17:33:26.962
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-09 17:33:27.364
+!MESSAGE GDB SERVER COMMAND :C:\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 64678 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-09 17:33:28.988
+!MESSAGE C:\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\Users\Kelly\akelly\ENSEA\3A\fpga\tp\TP_FPGA\telecran\soft\app\build\Default\app.elf
+
+!ENTRY com.ashling.riscfree.debug.opxd 4 0 2026-01-09 17:34:12.022
+!MESSAGE Debug session 'app.elf' is already running or not terminated completely.
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 17:34:18.693
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-09 17:34:38.571
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-09 17:34:38.934
+!MESSAGE GDB SERVER COMMAND :C:\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 64892 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-09 17:34:40.541
+!MESSAGE C:\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\Users\Kelly\akelly\ENSEA\3A\fpga\tp\TP_FPGA\telecran\soft\app\build\Default\app.elf
+
+!ENTRY org.eclipse.tcf 4 0 2026-01-09 18:27:35.119
+!MESSAGE Cannot send datagram packet to /192.168.56.255
+!STACK 0
+java.net.SocketException: Network is unreachable: no further information
+	at java.base/sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+	at java.base/sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:953)
+	at java.base/sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:914)
+	at java.base/sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:872)
+	at java.base/sun.nio.ch.DatagramChannelImpl.blockingSend(DatagramChannelImpl.java:904)
+	at java.base/sun.nio.ch.DatagramSocketAdaptor.send(DatagramSocketAdaptor.java:220)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:662)
+	at org.eclipse.tcf.internal.services.local.LocatorService.sendDatagramPacket(LocatorService.java:964)
+	at org.eclipse.tcf.internal.services.local.LocatorService.sendEmptyPacket(LocatorService.java:1101)
+	at org.eclipse.tcf.internal.services.local.LocatorService.sendAll(LocatorService.java:1118)
+	at org.eclipse.tcf.internal.services.local.LocatorService.refresh_timer(LocatorService.java:714)
+	at org.eclipse.tcf.internal.services.local.LocatorService.access$1(LocatorService.java:665)
+	at org.eclipse.tcf.internal.services.local.LocatorService$1$1.run(LocatorService.java:232)
+	at org.eclipse.tcf.protocol.Protocol$3.run(Protocol.java:242)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:97)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.tcf 4 0 2026-01-10 19:31:54.897
+!MESSAGE Cannot send datagram packet to /192.168.1.255
+!STACK 0
+java.net.SocketException: Network is unreachable: no further information
+	at java.base/sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+	at java.base/sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:953)
+	at java.base/sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:914)
+	at java.base/sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:872)
+	at java.base/sun.nio.ch.DatagramChannelImpl.blockingSend(DatagramChannelImpl.java:904)
+	at java.base/sun.nio.ch.DatagramSocketAdaptor.send(DatagramSocketAdaptor.java:220)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:662)
+	at org.eclipse.tcf.internal.services.local.LocatorService.sendDatagramPacket(LocatorService.java:964)
+	at org.eclipse.tcf.internal.services.local.LocatorService.sendEmptyPacket(LocatorService.java:1101)
+	at org.eclipse.tcf.internal.services.local.LocatorService.sendAll(LocatorService.java:1118)
+	at org.eclipse.tcf.internal.services.local.LocatorService.refresh_timer(LocatorService.java:714)
+	at org.eclipse.tcf.internal.services.local.LocatorService.access$1(LocatorService.java:665)
+	at org.eclipse.tcf.internal.services.local.LocatorService$1$1.run(LocatorService.java:232)
+	at org.eclipse.tcf.protocol.Protocol$3.run(Protocol.java:242)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:97)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY com.ashling.riscfree.debug.opxd 4 0 2026-01-12 13:47:19.329
+!MESSAGE Debug session 'app.elf' is already running or not terminated completely.
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 13:47:59.627
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 13:47:59.768
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-12 13:48:01.717
+!MESSAGE GDB SERVER COMMAND :C:\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 55304 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-12 13:48:03.512
+!MESSAGE C:\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\Users\Kelly\akelly\ENSEA\3A\fpga\tp\TP_FPGA\telecran\soft\app\build\Default\app.elf
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2026-01-12 13:48:07.794
+!MESSAGE Target not available.
+
+!ENTRY com.ashling.riscfree.debug.opxd 4 0 2026-01-12 13:48:23.112
+!MESSAGE Debug session 'app.elf' is already running or not terminated completely.
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 13:48:47.021
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.opxd 4 0 2026-01-12 13:50:03.092
+!MESSAGE Debug session 'app.elf' is already running or not terminated completely.
+
+!ENTRY org.eclipse.cdt.core 4 0 2026-01-12 13:50:59.707
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.cdt.core.CCorePlugin.stop() of bundle org.eclipse.cdt.core.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:923)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2116)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1986)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.content.IContentTypeManager.removeContentTypeChangeListener(org.eclipse.core.runtime.content.IContentTypeManager$IContentTypeChangeListener)" because the return value of "org.eclipse.core.runtime.Platform.getContentTypeManager()" is null
+	at org.eclipse.cdt.internal.core.model.CModelManager.shutdown(CModelManager.java:1378)
+	at org.eclipse.cdt.core.model.CoreModel.shutdown(CoreModel.java:1156)
+	at org.eclipse.cdt.core.CCorePlugin.stop(CCorePlugin.java:375)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:903)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	... 13 more
+Root exception:
+java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.content.IContentTypeManager.removeContentTypeChangeListener(org.eclipse.core.runtime.content.IContentTypeManager$IContentTypeChangeListener)" because the return value of "org.eclipse.core.runtime.Platform.getContentTypeManager()" is null
+	at org.eclipse.cdt.internal.core.model.CModelManager.shutdown(CModelManager.java:1378)
+	at org.eclipse.cdt.core.model.CoreModel.shutdown(CoreModel.java:1156)
+	at org.eclipse.cdt.core.CCorePlugin.stop(CCorePlugin.java:375)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:903)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2116)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1986)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.core.jobs 2 2 2026-01-12 13:51:00.078
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.debug.internal.ui.DebugUIPlugin$1
+!SESSION 2026-01-12 13:53:18.384 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=21.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 0 2026-01-12 13:53:28.663
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.eclipse.jetty.util.log.Log.getLogger(Log.java:31)
+	at org.eclipse.jetty.util.ajax.JSON.<clinit>(JSON.java:90)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.lambda$2(CompileCommandsJsonParser.java:671)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4058)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory cannot be found by de.marw.cmake.cdt_1.2.1.202501301713
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:562)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:557)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 27 more
+
+!ENTRY org.eclipse.ui 4 0 2026-01-12 13:53:28.677
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.jetty.util.ajax.JSON
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.determineBuiltinDetectors(CompileCommandsJsonParser.java:417)
+	at de.marw.cmake.cdt.language.settings.providers.BuiltinsCompileCommandsJsonParser.detectBuiltins(BuiltinsCompileCommandsJsonParser.java:107)
+	at de.marw.cmake.cdt.language.settings.providers.BuiltinsCompileCommandsJsonParser.lambda$1(BuiltinsCompileCommandsJsonParser.java:219)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4058)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory [in thread "main"]
+	at org.eclipse.jetty.util.log.Log.getLogger(Log.java:31)
+	at org.eclipse.jetty.util.ajax.JSON.<clinit>(JSON.java:90)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.lambda$2(CompileCommandsJsonParser.java:671)
+	... 23 more
+
+!ENTRY org.eclipse.cdt.core 4 0 2026-01-12 13:53:50.105
+!MESSAGE Error: Could not initialize class org.eclipse.jetty.util.ajax.JSON
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.jetty.util.ajax.JSON
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.shutdown(CompileCommandsJsonParser.java:612)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.closeConsoleOutputStream(ConsoleOutputSniffer.java:162)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.close(ConsoleOutputSniffer.java:70)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.close(ProcessClosure.java:101)
+	at org.eclipse.cdt.internal.core.ProcessClosure.isAlive(ProcessClosure.java:194)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:248)
+	at org.eclipse.cdt.core.CommandLauncherManager$CommandLauncherWrapper.waitAndRead(CommandLauncherManager.java:161)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:284)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeExternalBuild(ExternalBuildRunner.java:140)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:73)
+	at de.marw.cdt.cmake.core.internal.CMakeBuildRunner.invokeBuild(CMakeBuildRunner.java:129)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:783)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:530)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:471)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:490)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:288)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory [in thread "main"]
+	at org.eclipse.jetty.util.log.Log.getLogger(Log.java:31)
+	at org.eclipse.jetty.util.ajax.JSON.<clinit>(JSON.java:90)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.lambda$2(CompileCommandsJsonParser.java:671)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4058)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 13:54:18.752
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 13:54:21.997
+!MESSAGE No Debug probes found
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-12 13:54:24.795
+!MESSAGE GDB SERVER COMMAND :C:\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 52717 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2026-01-12 13:54:28.369
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@d77dd7b): Status ERROR: com.ashling.riscfree.debug.opxd code=-1 GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+' resulted in an error.
+!SUBENTRY 1 com.ashling.riscfree.debug.opxd 4 -1 2026-01-12 13:54:28.370
+!MESSAGE GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-12 13:54:28.396
+!MESSAGE Error in GDB server launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:599)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+!SUBENTRY 1 com.ashling.riscfree.debug.opxd 4 -1 2026-01-12 13:54:28.397
+!MESSAGE GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 13:54:55.022
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 13:54:55.033
+!MESSAGE No Debug probes found
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-12 13:54:55.251
+!MESSAGE GDB SERVER COMMAND :C:\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 52047 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2026-01-12 13:54:58.682
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@62422088): Status ERROR: com.ashling.riscfree.debug.opxd code=-1 GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+' resulted in an error.
+!SUBENTRY 1 com.ashling.riscfree.debug.opxd 4 -1 2026-01-12 13:54:58.682
+!MESSAGE GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-12 13:54:58.689
+!MESSAGE Error in GDB server launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:599)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+!SUBENTRY 1 com.ashling.riscfree.debug.opxd 4 -1 2026-01-12 13:54:58.690
+!MESSAGE GDB server terminated
+
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Initializing connection ...
+Connecting to Intel JTAG Server.
+Selected debug probe is not available for debug session
+
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 13:55:12.825
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 13:55:12.835
+!MESSAGE No Debug probes found
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 13:56:39.766
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 13:56:39.947
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 13:56:40.167
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 13:56:40.184
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-12 13:56:40.185
+!MESSAGE GDB SERVER COMMAND :C:\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type unknown --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 58690 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2026-01-12 13:56:40.411
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@1513e769): Status ERROR: com.ashling.riscfree.debug.opxd code=0 
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Debug probe type not specified, defaulting to Opella-XD...
+Initializing connection ...
+ org.eclipse.core.runtime.CoreException: 
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Debug probe type not specified, defaulting to Opella-XD...
+Initializing connection ...
+' resulted in an error.
+!SUBENTRY 1 com.ashling.riscfree.debug.opxd 4 0 2026-01-12 13:56:40.411
+!MESSAGE 
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Debug probe type not specified, defaulting to Opella-XD...
+Initializing connection ...
+
+!STACK 1
+org.eclipse.core.runtime.CoreException: 
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Debug probe type not specified, defaulting to Opella-XD...
+Initializing connection ...
+
+	at com.ashling.riscfree.debug.opxd.dsf.GdbServerBackend.launchGdbServerProcess(GdbServerBackend.java:361)
+	at com.ashling.riscfree.debug.opxd.dsf.GdbServerBackend$GdbServerStep$2.run(GdbServerBackend.java:763)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 2 com.ashling.riscfree.debug.opxd 4 0 2026-01-12 13:56:40.412
+!MESSAGE 
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Debug probe type not specified, defaulting to Opella-XD...
+Initializing connection ...
+
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-12 13:56:40.417
+!MESSAGE Error in GDB server launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: 
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Debug probe type not specified, defaulting to Opella-XD...
+Initializing connection ...
+
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:599)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.eclipse.core.runtime.CoreException: 
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Debug probe type not specified, defaulting to Opella-XD...
+Initializing connection ...
+
+	at com.ashling.riscfree.debug.opxd.dsf.GdbServerBackend.launchGdbServerProcess(GdbServerBackend.java:361)
+	at com.ashling.riscfree.debug.opxd.dsf.GdbServerBackend$GdbServerStep$2.run(GdbServerBackend.java:763)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 com.ashling.riscfree.debug.opxd 4 0 2026-01-12 13:56:40.418
+!MESSAGE 
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Debug probe type not specified, defaulting to Opella-XD...
+Initializing connection ...
+
+!STACK 1
+org.eclipse.core.runtime.CoreException: 
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Debug probe type not specified, defaulting to Opella-XD...
+Initializing connection ...
+
+	at com.ashling.riscfree.debug.opxd.dsf.GdbServerBackend.launchGdbServerProcess(GdbServerBackend.java:361)
+	at com.ashling.riscfree.debug.opxd.dsf.GdbServerBackend$GdbServerStep$2.run(GdbServerBackend.java:763)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 2 com.ashling.riscfree.debug.opxd 4 0 2026-01-12 13:56:40.418
+!MESSAGE 
+Ashling GDB Server for RISC-V (ash-riscv-gdb-server).
+v25.1.1, 31-Jan-2025, (c)Ashling Microsystems Ltd 2024.
+
+Debug probe type not specified, defaulting to Opella-XD...
+Initializing connection ...
+
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 13:56:51.453
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 13:56:51.465
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 13:56:54.996
+!MESSAGE Detecting scan chain for serial number=1 jtagFreq=16000KHz tapReset=1
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 13:56:55.649
+!MESSAGE TapDetails [tapNumber=1, irLength=4, idCode=1268778103, name=SOCVHPS, numberOfCores=0, decimalNumberSystem=false]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 13:56:55.651
+!MESSAGE TapDetails [tapNumber=2, irLength=10, idCode=47194333, name=5CSEBA6(.|ES)/5CSEMA6/.., numberOfCores=1, decimalNumberSystem=false]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 13:56:55.652
+!MESSAGE CoreDetails [coreId=144207360, name=Nios V, coreIndex=0]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 13:57:01.562
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 13:57:01.584
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-12 13:57:01.862
+!MESSAGE GDB SERVER COMMAND :C:\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 58710 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-12 13:57:03.519
+!MESSAGE C:\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\Users\Kelly\akelly\ENSEA\3A\fpga\tp\TP_FPGA\telecran\soft\app\build\Default\app.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 13:57:22.580
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 13:57:22.597
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-12 13:57:22.847
+!MESSAGE GDB SERVER COMMAND :C:\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 58745 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-12 13:57:24.445
+!MESSAGE C:\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\Users\Kelly\akelly\ENSEA\3A\fpga\tp\TP_FPGA\telecran\soft\app\build\Default\app.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 13:58:29.917
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 13:58:29.987
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-12 13:58:30.230
+!MESSAGE GDB SERVER COMMAND :C:\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 61907 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-12 13:58:31.901
+!MESSAGE C:\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\Users\Kelly\akelly\ENSEA\3A\fpga\tp\TP_FPGA\telecran\soft\app\build\Default\app.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 14:00:36.989
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 14:00:37.065
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-12 14:00:37.285
+!MESSAGE GDB SERVER COMMAND :C:\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 58601 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-12 14:00:38.946
+!MESSAGE C:\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\Users\Kelly\akelly\ENSEA\3A\fpga\tp\TP_FPGA\telecran\soft\app\build\Default\app.elf
+
+!ENTRY com.ashling.riscfree.debug.opxd 4 0 2026-01-12 14:03:05.677
+!MESSAGE Debug session 'app.elf' is already running or not terminated completely.
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 14:03:26.945
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-01-12 14:03:27.023
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=DE-SoC [USB-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-01-12 14:03:27.246
+!MESSAGE GDB SERVER COMMAND :C:\intelFPGA_lite\24.1std\riscfree\debugger\gdbserver-riscv\ash-riscv-gdb-server.exe --probe-type usb-blaster-2 --transport-type jtag --device 0x02D020DD --auto-detect true --gdb-port 50144 --jtag-frequency 16000KHz --tap-number 2 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-12 14:03:28.837
+!MESSAGE C:\intelFPGA_lite\24.1std\riscfree\RiscFree\/../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb.exe --interpreter=mi2 --nx C:\Users\Kelly\akelly\ENSEA\3A\fpga\tp\TP_FPGA\telecran\soft\app\build\Default\app.elf

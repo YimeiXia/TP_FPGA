@@ -26,7 +26,7 @@ architecture rtl of encodeur is
  
 begin
 
-	process(i_ch_a, i_ch_b)
+	process(i_rst_n, i_clk)
 		variable counter_clk : natural range 0 to CLOCK_DIV := 0;
 		variable compteur : natural range 0 to CNT_MAX-1 := 0;
 		variable vector : std_logic_vector(CNT_MAX-1 downto 0);
